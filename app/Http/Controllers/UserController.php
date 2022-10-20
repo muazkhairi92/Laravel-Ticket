@@ -60,7 +60,7 @@ class UserController extends Controller
         //
         $user=User::create($request ->all());
         $user->assignRole($user['roles']);
-        $user->notify(new SuccessRegisterNotification($user));
+        // $user->notify(new SuccessRegisterNotification($user));
 
         return response()->json($user);
     }
