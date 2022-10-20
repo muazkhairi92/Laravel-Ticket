@@ -58,7 +58,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
-        $user=User::create($request ->all());
+        $user=User::create($request ->except('roles'));
         $user->assignRole($user['roles']);
         // $user->notify(new SuccessRegisterNotification($user));
 
