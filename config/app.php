@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://solverticket2.vercel.app/her'),
 
     'asset_url' => env('ASSET_URL', null),
 
